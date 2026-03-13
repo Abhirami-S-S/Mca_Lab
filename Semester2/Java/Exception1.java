@@ -6,7 +6,7 @@ class NegativeNumberException extends Exception {
     }
 }
 
-public class Pg21 {
+public class  Exception1{
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int i = 1, n, sum = 0, m;
