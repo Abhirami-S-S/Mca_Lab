@@ -27,7 +27,7 @@ class Cuboid extends Rectangle implements Measurable,Printable{
         System.out.println("Volume : "+ volume());
     }
 }
-public class Pgm {
+public class CuboidVolumeDemo {
     public static void main(String[] args){
         Cuboid c = new Cuboid(4,5,6);
         c.show();
