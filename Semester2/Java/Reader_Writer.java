@@ -1,5 +1,5 @@
 class Reader implements Runnable{
-    static final Object lock = Pg24.Lock;
+    static final Object lock = Reader_Writer.Lock;
     public void run(){
         synchronized (lock) {
         try {
@@ -17,7 +17,7 @@ class Reader implements Runnable{
     }
 }
 class Writer implements Runnable{
-    static final Object lock=Pg24.Lock;
+    static final Object lock=Reader_Writer.Lock;
     public void run(){
         synchronized (lock) {
         try {
@@ -34,7 +34,7 @@ class Writer implements Runnable{
     }
     }
 }
-public class Pg24 {
+public class Reader_Writer {
     static final Object Lock=new Object();
     public static void main(String[] arg){
         Reader re =new Reader();
