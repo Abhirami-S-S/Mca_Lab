@@ -55,7 +55,7 @@ class Decrementer implements Runnable {
         }
     }
 }
-public class CDemo_pg25{
+public class Counter_thread.{
 public static void main(String[] args) {
     Counter sharedCounter = new Counter();
 
