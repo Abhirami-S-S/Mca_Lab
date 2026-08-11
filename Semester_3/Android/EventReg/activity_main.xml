@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EVENT REGISTRATION"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="20dp"
+            android:background="@drawable/banner_background"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textSize="18sp"
+            android:layout_marginTop="25dp" />
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your name"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email Address"
+            android:textSize="18sp"
+            android:layout_marginTop="15dp" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your email"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registration Category"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbStudent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Student" />
+
+            <RadioButton
+                android:id="@+id/rbProfessional"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Professional" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Workshops of Interest"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp" />
+
+        <CheckBox
+            android:id="@+id/cbAndroid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Android Development" />
+
+        <CheckBox
+            android:id="@+id/cbAI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AI &amp; ML" />
+
+        <CheckBox
+            android:id="@+id/cbCyber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cybersecurity" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit Registration"
+            android:layout_marginTop="25dp" />
+
+    </LinearLayout>
+
+</ScrollView>
