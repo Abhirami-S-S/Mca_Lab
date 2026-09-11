@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F3F6FA"
+    tools:context=".MainActivity">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📅 Days &amp; Months"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:padding="20dp"
+        android:background="#3F51B5"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Month Section -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Month"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:textColor="#263238"
+        android:padding="4dp"
+        android:layout_marginBottom="8dp" />
+
+    <Spinner
+        android:id="@+id/spin"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="#FFFFFF"
+        android:padding="8dp"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Days Section -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Day"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:textColor="#263238"
+        android:padding="4dp"
+        android:layout_marginBottom="8dp" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:divider="#E0E0E0"
+        android:dividerHeight="1dp"
+        android:padding="4dp" />
+
+</LinearLayout>
+
